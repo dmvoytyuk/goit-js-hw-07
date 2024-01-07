@@ -15,12 +15,26 @@ console.log(inputField);
 // console.log(destroyButton);
 // console.log(boxesContainer);
 
-function createBoxes(amount) {}
+function createBoxes(amount) {
+  let boxes = [];
+  let box = '';
+  let boxWidth = 30;
+  let boxHeight = 30;
+  for (let i = 0; i < amount; i++) {
+    let randomColor = getRandomHexColor();
+    box = `<div style="background-color:${randomColor};width:${boxWidth}px;height:${boxHeight}px;"></div>`;
+    boxes.push(box);
+    boxWidth += 10;
+    boxHeight += 10;
+  }
+  return boxes.join('');
+}
+
 function validateInput(value) {
-  console.log(value);
   value = Number.parseInt(value);
-  console.log(value);
   if (isNaN(value)) {
+    return false;
+  } else if (value < 1 || value > 100) {
     return false;
   } else {
     return true;
@@ -32,5 +46,11 @@ destroyButton.addEventListener('click', event => {
 });
 
 createButton.addEventListener('click', event => {
-  console.log(validateInput(inputField.value));
+  if (validateInput(inputField.value)) {
+    boxesContainer.innerHTML = '';
+    const newHTML = createBoxes(Number.parseInt(inputField.value));
+    boxesContainer.innerHTML = newHTML;
+  } else {
+    alert('Enter number between 1 to 100');
+  }
 });
