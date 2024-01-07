@@ -180,3 +180,67 @@ h1 {
 .change-color:hover {
   background-color: #6c8cff;
 }
+
+#controls {
+  margin: 0 auto;
+  padding: 32px;
+  width: 486px;
+  display: block;
+  border-radius: 8px;
+  background-color: #f6f6fe;
+  box-shadow: 1px 1px 3px 0px rgba(0, 0, 0, 0.15);
+  margin-bottom: 16px;
+}
+
+#controls input {
+  width: 150px;
+  padding: 8px 16px;
+  border-radius: 8px;
+  border: 1px solid #808080;
+  color: #2e2f42;
+  font-family: Montserrat;
+  font-size: 16px;
+  line-height: 1.5em;
+  letter-spacing: 0.04em;
+  text-align: center;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+input[type='number'] {
+  -moz-appearance: textfield;
+}
+
+#controls button {
+  border-radius: 8px;
+  background-color: #4e75ff;
+  padding: 8px 16px;
+  width: 120px;
+  border: none;
+
+  color: #fff;
+  font-family: Montserrat;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 1.5em;
+  letter-spacing: 0.04em;
+}
+
+#controls button:last-child {
+  background-color: #ff4e4e;
+}
+
+#boxes {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+  width: 486px;
+  margin: 0 auto;
+  background-color: #f6f6fe;
+  box-shadow: 1px 1px 3px 0px rgba(0, 0, 0, 0.15);
+  padding: 32px;
+}
