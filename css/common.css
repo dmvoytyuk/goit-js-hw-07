@@ -182,10 +182,11 @@ h1 {
 }
 
 #controls {
+  display: flex;
+  gap: 16px;
   margin: 0 auto;
   padding: 32px;
   width: 486px;
-  display: block;
   border-radius: 8px;
   background-color: #f6f6fe;
   box-shadow: 1px 1px 3px 0px rgba(0, 0, 0, 0.15);
