@@ -9,12 +9,6 @@ const createButton = document.querySelector('button[data-create]');
 const destroyButton = document.querySelector('button[data-destroy]');
 const inputField = document.querySelector('input');
 
-console.log(inputField);
-
-// console.log(createButton);
-// console.log(destroyButton);
-// console.log(boxesContainer);
-
 function createBoxes(amount) {
   let boxes = [];
   let box = '';
