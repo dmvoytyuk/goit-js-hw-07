@@ -18,6 +18,10 @@ h1 {
   padding: 0;
 }
 
+button {
+  cursor: pointer;
+}
+
 .item {
   margin: auto;
   background-color: #f6f6fe;
