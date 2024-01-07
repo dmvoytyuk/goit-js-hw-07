@@ -19,6 +19,7 @@ h1 {
 }
 
 .item {
+  margin: auto;
   background-color: #f6f6fe;
   width: 360px;
   border-radius: 8px;
@@ -61,7 +62,6 @@ h1 {
   flex-shrink: unset;
   list-style-type: none;
   padding: 0;
-  margin: 0;
 }
 
 .gallery li {
@@ -99,6 +99,11 @@ h1 {
   flex-direction: column;
   gap: 8px;
   padding: 24px;
+  margin: 0 auto;
+  width: 408px;
+
+  justify-content: center;
+  align-items: flex-start;
 }
 
 /* .login-form label {
@@ -120,9 +125,12 @@ h1 {
 }
 
 .login-form button {
-  width: 86px;
+  flex-shrink: 0;
+  flex-basis: auto;
+
   height: 40px;
   border-radius: 8px;
+  padding: 8px 16px;
   background: #4e75ff;
   border: none;
 
@@ -135,9 +143,40 @@ h1 {
 }
 
 .login-form label {
+  display: block;
   color: #2e2f42;
   font-family: Montserrat;
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.04em;
+}
+
+.widget {
+  margin: 0 auto;
+  width: 210px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.change-color {
+  flex-shrink: 0;
+  flex-basis: auto;
+  height: 40px;
+  border-radius: 8px;
+  background-color: #4e75ff;
+  border: none;
+  padding: 8px 16px;
+
+  color: #fff;
+  font-family: Montserrat;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 1.5em;
+  letter-spacing: 0.04em;
+}
+
+.change-color:hover {
+  background-color: #6c8cff;
 }
