@@ -243,7 +243,8 @@ input[type='number'] {
   display: flex;
   flex-wrap: wrap;
   gap: 16px;
-  width: 486px;
+  min-width: 486px;
+  width: fit-content;
   margin: 0 auto;
   background-color: #f6f6fe;
   box-shadow: 1px 1px 3px 0px rgba(0, 0, 0, 0.15);
