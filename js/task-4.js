@@ -13,7 +13,7 @@ form.addEventListener('submit', event => {
       event.target.elements.email.value.trim();
     userData[event.target.elements.password.getAttribute('name')] =
       event.target.elements.password.value.trim();
+    console.log(userData);
+    event.target.reset();
   }
-  console.log(userData);
-  event.target.reset();
 });

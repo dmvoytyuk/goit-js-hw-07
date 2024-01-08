@@ -21,7 +21,7 @@ function createBoxes(amount) {
     boxWidth += 10;
     boxHeight += 10;
   }
-  return boxes.join('');
+  boxesContainer.innerHTML = boxes.join('');
 }
 
 function validateInput(value) {
@@ -42,8 +42,7 @@ destroyButton.addEventListener('click', event => {
 createButton.addEventListener('click', event => {
   if (validateInput(inputField.value)) {
     boxesContainer.innerHTML = '';
-    const newHTML = createBoxes(Number.parseInt(inputField.value));
-    boxesContainer.innerHTML = newHTML;
+    createBoxes(Number.parseInt(inputField.value));
   } else {
     alert('Enter number between 1 to 100');
   }
